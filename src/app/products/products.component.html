@@ -6,10 +6,9 @@
       </h3>
       <p class="card-text">{{ product.description }}</p>
 
-      <button angular-rave [PBFPubKey]="'FLWPUBK-295fe9a7637eacdf0b7e56cecfdda200-X'"
-        [customer_email]="'user@example.com'" [amount]="product.price" [custom_title]="product.name"
-        [txref]="product.name +3" (callback)="paymentSuccess($event)" (close)="paymentFailure()"
-        class="btn btn-primary">Buy for
+      <button angular-rave [PBFPubKey]="'FLWPUBK-xxxxxxxxxxxxxxxxx-X'" [customer_email]="'user@example.com'"
+        [amount]="product.price" [custom_title]="product.name" [txref]="product.name +3"
+        (callback)="paymentSuccess($event)" (close)="paymentFailure()" class="btn btn-primary">Buy for
         &#x20a6;{{ product.price }}</button>
 
     </div>
